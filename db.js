@@ -1,6 +1,6 @@
 const { response } = require('express');
 const mongoose = require('mongoose');
-const MONGO_URI = "mongodb+srv://atlas-sample-dataset-load-67fa4856e5c1cb783171cb37:parikh09@gofoodcluster.wxtreuj.mongodb.net/?retryWrites=true&w=majority&appName=gofoodCluster";
+const MONGO_URI = "mongodb+srv://parikhguleria801:parikh09@gofoodcluster.wxtreuj.mongodb.net/GoFood?retryWrites=true&w=majority&appName=gofoodCluster";
 
 const connectToMongo = async () => {
   try {

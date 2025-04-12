@@ -9,6 +9,10 @@ app.use(cors);
 connectToMongo();
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send('✅ Server is live!');
+});
+
 
 app.use('/api',require('./Routes/CreateUser'));
 app.use('/api',require('./Routes/DisplayData'));

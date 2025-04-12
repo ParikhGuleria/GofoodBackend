@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const PORT = 5000
+const port = process.env.PORT || 5000
 const connectToMongo=require("./db")
 var cors=require('cors');
 
@@ -15,7 +15,7 @@ app.use('/api',require('./Routes/DisplayData'));
 app.use('/api',require('./Routes/OrderData'));
 
 
-app.listen(PORT, () => {
-  console.log(`Example: app listening on port ${PORT}`)
+app.listen(port, "0.0.0.0",() => {
+  console.log(`Example: app listening on port: ${port}`)
 })
 

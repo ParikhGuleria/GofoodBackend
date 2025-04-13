@@ -10,7 +10,7 @@ connectToMongo();
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('✅ Server is live!');
+  res.send('Server is live!');
 });
 
 
@@ -19,7 +19,7 @@ app.use('/api',require('./Routes/DisplayData'));
 app.use('/api',require('./Routes/OrderData'));
 
 
-app.listen(port, "0.0.0.0",() => {
+app.listen(port, '0.0.0.0',() => {
   console.log(`Example: app listening on port: ${port}`)
 })
 

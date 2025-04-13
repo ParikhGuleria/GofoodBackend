@@ -10,7 +10,7 @@ connectToMongo();
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('Server is live!');
+  res.send('we are live!');
 });
 
 
